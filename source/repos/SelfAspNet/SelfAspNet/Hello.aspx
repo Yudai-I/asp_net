@@ -11,7 +11,7 @@
     <form id="form1" runat="server">
         <div>
             
-            名前：<asp:TextBox ID="txtname" runat="server" OnTextChanged="txtname_TextChanged" TextMode="Date"></asp:TextBox>
+            名前：<asp:TextBox ID="txtname" runat="server" OnTextChanged="txtname_TextChanged" TextMode="Color"></asp:TextBox>
             <asp:Button ID="btnSend" runat="server" Text="送信" OnClick="btnSend_Click" />
             </br>
             <asp:Label ID="lblGreet" runat="server"></asp:Label>
