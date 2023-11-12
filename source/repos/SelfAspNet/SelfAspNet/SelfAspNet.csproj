@@ -71,34 +71,66 @@
     <Content Include="App_Data\SelfAsp_log.ldf">
       <DependentUpon>SelfAsp.mdf</DependentUpon>
     </Content>
+    <Content Include="Chap04\GridView.aspx" />
     <Content Include="Global.asax" />
-    <Content Include="project3\Valid.aspx" />
+    <Content Include="Chap03\Custom.aspx" />
+    <Content Include="Chap03\Valid.aspx" />
     <None Include="Scripts\jquery-3.7.1.intellisense.js" />
+    <Content Include="Image\A0001.jpg" />
+    <Content Include="Image\A0002.jpg" />
+    <Content Include="Image\A0003.jpg" />
+    <Content Include="Image\A0004.jpg" />
+    <Content Include="Image\ajax-loader.gif" />
+    <Content Include="Image\asc.png" />
+    <Content Include="Image\desc.png" />
+    <Content Include="Image\go.gif" />
+    <Content Include="Image\lens.gif" />
+    <Content Include="Image\Login.gif" />
+    <Content Include="Image\Logout.gif" />
+    <Content Include="Image\S0001.jpg" />
+    <Content Include="Image\S0002.jpg" />
+    <Content Include="Image\S0003.jpg" />
+    <Content Include="Image\T0001.jpg" />
+    <Content Include="Image\T0002.jpg" />
     <Content Include="Scripts\jquery-3.7.1.js" />
     <Content Include="Scripts\jquery-3.7.1.min.js" />
     <Content Include="Scripts\jquery-3.7.1.slim.js" />
     <Content Include="Scripts\jquery-3.7.1.slim.min.js" />
     <Content Include="Site.css" />
     <Content Include="Web.config" />
-    <Content Include="Hello.aspx" />
+    <Content Include="Chap02\Hello.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Chap04\GridView.aspx.cs">
+      <DependentUpon>GridView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Chap04\GridView.aspx.designer.cs">
+      <DependentUpon>GridView.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="project3\Valid.aspx.cs">
+    <Compile Include="Chap03\Custom.aspx.cs">
+      <DependentUpon>Custom.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Chap03\Custom.aspx.designer.cs">
+      <DependentUpon>Custom.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Chap03\Valid.aspx.cs">
       <DependentUpon>Valid.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="project3\Valid.aspx.designer.cs">
+    <Compile Include="Chap03\Valid.aspx.designer.cs">
       <DependentUpon>Valid.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Hello.aspx.cs">
+    <Compile Include="Chap02\Hello.aspx.cs">
       <DependentUpon>Hello.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Hello.aspx.designer.cs">
+    <Compile Include="Chap02\Hello.aspx.designer.cs">
       <DependentUpon>Hello.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
