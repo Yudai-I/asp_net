@@ -14,12 +14,24 @@
         <asp:GridView ID="GridView2" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" BackColor="White" BorderColor="#DEDFDE" BorderStyle="None" BorderWidth="1px" CellPadding="4" DataKeyNames="aid" DataSourceID="sds" ForeColor="Black" GridLines="Vertical" PageSize="3">
             <AlternatingRowStyle BackColor="White" />
             <Columns>
-                <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" />
-                <asp:BoundField DataField="aid" HeaderText="aid" ReadOnly="True" SortExpression="aid" />
-                <asp:BoundField DataField="category" HeaderText="category" SortExpression="category" />
-                <asp:BoundField DataField="comment" HeaderText="comment" SortExpression="comment" />
-                <asp:BoundField DataField="updated" HeaderText="updated" SortExpression="updated" />
-                <asp:CheckBoxField DataField="favorite" HeaderText="favorite" SortExpression="favorite" />
+                <asp:HyperLinkField DataNavigateUrlFields="aid"
+                        DataNavigateUrlFormatString="https://wings.msn.to/album/{0}"
+                        DataTextField="aid" DataTextFormatString="{0}" HeaderText="アルバムコード" />
+                    <asp:ImageField DataAlternateTextField="aid" DataImageUrlField="aid"
+                        DataImageUrlFormatString="~/Image/{0}.jpg" HeaderText="画像" ReadOnly="True">
+                        <ControlStyle Height="40px" Width="40px" />
+                    </asp:ImageField>
+                    <asp:BoundField DataField="category" HeaderText="分類"
+                        SortExpression="category" />
+                    <asp:BoundField DataField="comment" HeaderText="備考"
+                        SortExpression="comment" />
+                    <asp:BoundField DataField="updated" HeaderText="最終更新日"
+                        SortExpression="updated" DataFormatString="{0:yyyy年MM月dd日(ddd)}" />
+                    <asp:CheckBoxField DataField="favorite" HeaderText="お気に入り"
+                        SortExpression="favorite" />
+                    <asp:CommandField ShowDeleteButton="True" ShowEditButton="True"
+                        ButtonType="Button" HeaderText="編集／削除" />
+
             </Columns>
             <FooterStyle BackColor="#CCCC99" />
             <HeaderStyle BackColor="#6B696B" Font-Bold="True" ForeColor="White" />
