@@ -12,7 +12,7 @@
     <form id="form1" runat="server">
         <div>
         </div>
-        <asp:GridView ID="GridView2" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" BackColor="White" BorderColor="#DEDFDE" BorderStyle="None" BorderWidth="1px" CellPadding="4" DataKeyNames="aid" DataSourceID="sds" ForeColor="Black" GridLines="Vertical" PageSize="3" style="margin-right: 1px">
+        <asp:GridView ID="GridView2" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" BackColor="White" BorderColor="#DEDFDE" BorderStyle="None" BorderWidth="1px" CellPadding="4" DataKeyNames="aid" DataSourceID="sds" ForeColor="Black" GridLines="Vertical" PageSize="3" style="margin-right: 1px" OnRowCreated="GridView2_RowCreated" OnRowUpdated="GridView2_RowUpdated" OnRowUpdating="GridView2_RowUpdating" ShowFooter="True">
             <AlternatingRowStyle BackColor="White" />
             <Columns>
                 <asp:HyperLinkField DataNavigateUrlFields="aid"
@@ -92,7 +92,7 @@
                 <asp:Parameter Name="aid" Type="String" />
             </UpdateParameters>
         </asp:SqlDataSource>
-        <asp:ValidationSummary ID="summary" runat="server" HeaderText="以下のエラーが発生しました。" ShowMessageBox="True" ShowSummary="True" />
+        <asp:ValidationSummary ID="summary" runat="server" HeaderText="以下のエラーが発生しました。" ShowMessageBox="True" ShowSummary="False" />
     </form>
 </body>
 </html>
