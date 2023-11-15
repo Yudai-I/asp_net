@@ -1,4 +1,7 @@
-﻿.valid { color:red; }
+﻿.valid { 
+    color: red; 
+
+}
 
 .asc {
     background: url(./Image/asc.png) right no-repeat;

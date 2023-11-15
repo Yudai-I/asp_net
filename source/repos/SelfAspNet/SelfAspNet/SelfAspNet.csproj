@@ -72,6 +72,7 @@
       <DependentUpon>SelfAsp.mdf</DependentUpon>
     </Content>
     <Content Include="Chap04\GridView.aspx" />
+    <Content Include="Chap04\GridView2.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Chap03\Custom.aspx" />
     <Content Include="Chap03\Valid.aspx" />
@@ -107,6 +108,13 @@
     </Compile>
     <Compile Include="Chap04\GridView.aspx.designer.cs">
       <DependentUpon>GridView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Chap04\GridView2.aspx.cs">
+      <DependentUpon>GridView2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Chap04\GridView2.aspx.designer.cs">
+      <DependentUpon>GridView2.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
