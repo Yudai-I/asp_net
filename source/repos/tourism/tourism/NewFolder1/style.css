@@ -1,0 +1,41 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+}
+.header {
+    background-color: #555555; /* ヘッダーの背景色をブラックに設定 */
+    text-align: center; /* テキストを中央揃えに設定 */
+    height: 70px;
+}
+
+    .header Button1 {
+        color: #fff; /* ボタンのテキストカラーをホワイトに設定 */
+        background-color: transparent; /* ボタンの背景色をダークグレーに設定 */
+        padding: 5px 10px; /* ボタンの余白を設定 */
+        border: none; /* ボーダーをなしに設定 */
+        cursor: pointer; /* カーソルをポインターに設定 */
+    }
+
+    .header Button3 {
+        color: #fff; /* ボタンのテキストカラーをホワイトに設定 */
+        background-color: transparent; /* ボタンの背景色をダークグレーに設定 */
+        padding: 5px 10px; /* ボタンの余白を設定 */
+        border: none; /* ボーダーをなしに設定 */
+        cursor: pointer; /* カーソルをポインターに設定 */
+    }
+
+
+.btn-border {
+    border: 2px solid #000;
+    border-radius: 0;
+    background: #fff;
+}
+
+    a.btn-border:hover {
+        color: #fff;
+        background: #000;
+    }
